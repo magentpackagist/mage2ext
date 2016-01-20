@@ -1,0 +1,27 @@
+{
+    "name": "ktpl/module-extension1",
+    "description": "Test module for Magento 2",
+    "type": "magento2-module",
+    "require": {
+    	"php": "~5.5.0|~5.6.0|~7.0.0",
+    	"magento/framework": "~1.0.0"
+  	},
+
+ "extra":{
+      "map":[
+        [
+          "*",
+          "Ktpl/Extension1"
+        ]
+      ]
+    },
+
+
+
+    "autoload": {
+ 	   "files": [ "registration.php" ],
+    	"psr-4": {
+      		"Ktpl\\Extension1\\": ""
+  	  	}
+  	}
+}
